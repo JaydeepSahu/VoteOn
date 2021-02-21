@@ -1,0 +1,37 @@
+#status
+{
+	height:50px;
+	width:100%;
+	background-color:#465945	;
+	color:white;
+font-size:30px;
+//margin-top:10px;
+}
+#side
+{
+	height:100%;
+	width:9%;
+	float:left;
+		//border:1px solid;
+}
+#about
+{
+	height:400px;
+	width:100%;
+	//border:1px solid;
+	margin-top:10px;
+}
+#about1
+{
+	height:100%;
+	width:31%;
+		float:left;
+			//border:1px solid;
+}
+#about2
+{
+	height:100%;
+	width:51%;
+		float:left;
+			//border:1px solid;
+}

@@ -1,0 +1,38 @@
+#contact
+{
+height:600px;
+width:100%;
+margin-top:25px;
+}
+#side1
+{
+height:100%;
+width:30%;
+//border:1px solid;
+float:left;
+}
+#side2
+{
+height:100%;
+width:50%;
+//border:1px solid;
+float:left;
+}
+.address
+{
+	height:30%;
+	width:80%;
+	border:1px solid #E3DAC9	;
+	margin:auto;
+	border-radius:10px;
+	background-color:white;
+}
+.address h5,p
+{
+	margin-left:10px;
+}
+.address p
+{
+	margin-left:20px;
+	color:grey;
+}

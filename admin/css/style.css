@@ -1,0 +1,88 @@
+#outer
+{
+height:"auto";
+width:"100%";
+border:1px solid;
+}
+#home h2
+{
+	font-weight:10px;
+	color:white;
+	text-align:center;
+	font-size:46px;
+}
+#home p
+{
+	font-weight:20px;
+	color:white;
+	text-align:center;
+	font-size:25px;
+	font:calibary;
+}
+
+
+#welcome
+{
+	height:70px;
+	width:100%;
+	color:#DCDCDC		;
+}
+#welcome h3
+{
+	
+	font:calibary;
+	text-align:center;
+}
+#image
+{
+	height:200px;
+	width:100%;
+}
+.side
+{
+	height:100%;
+	width:12.5%;
+	float:left;
+}
+.middle
+{
+	height:100%;
+	width:25%;
+	//border:1px solid;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

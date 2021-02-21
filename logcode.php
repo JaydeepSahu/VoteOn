@@ -1,0 +1,49 @@
+<?php
+session_start();
+$who=$_POST['a'];
+$email=$_POST['email'];
+$password=$_POST['password'];
+//echo $email,$password;
+include("connect.php");
+if($who=='Voter')
+{
+	$query="select * from tbl_voter where email='$email' and password='$password'";
+    $res=mysql_query($query);
+	if($row=mysql_fetch_array($res,MYSQL_BOTH))
+	{
+		$_SESSION['voter']=$email;
+		header("location:voter/voterpage.php");
+	}
+	else
+	{
+		header("location:login.php");
+	}
+}
+if($who=='Commitee')
+{
+	$query="select * from tbl_commitee where email='$email' and password='$password'";
+    $res=mysql_query($query);
+	if($row=mysql_fetch_array($res,MYSQL_BOTH))
+	{
+		$_SESSION['commitee']=$email;
+		header("location:commitee/commiteepage.php");
+	}
+	else
+	{
+		header("location:login.php");
+	}
+}
+if($who=='Candidate')
+{
+	$query="select * from tbl_candidate where email='$email' and password='$password'";
+    $res=mysql_query($query);
+	if($row=mysql_fetch_array($res,MYSQL_BOTH))
+	{
+		$_SESSION['candidate']=$email;
+		header("location:candidate/candidatepage.php");
+	}
+	else
+	{
+		header("location:login.php");
+	}
+}

@@ -1,0 +1,11 @@
+<?php
+session_start();
+$_SESSION['admin'];
+if($_SESSION['admin']=="")
+{
+session_destroy();
+header("location:oops.php");	
+}
+$email=$_SESSION['voter'];
+include("connect.php");
+?>
